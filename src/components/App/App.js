@@ -8,18 +8,8 @@ import "../../style/App/app.scss";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-export const themes = {
-  dark: {
-    background: "#000",
-    color: "#fff",
-  },
-  light: {
-    background: "#fff",
-    color: "#000",
-  },
-};
+import {themes,ThemeContext} from '../Settings/Settings'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -30,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
 }));
-export const ThemeContext = React.createContext(themes.dark);
+
 const App = () => {
   const [name, setName] = useState("Emre");
   const [theme, setTheme] = useState(themes.dark);
@@ -45,13 +35,17 @@ const App = () => {
   }
 
   return (
-    <>
-      <ThemeContext.Provider value={theme}>
+    <ThemeContext.Provider value={theme} >
+    <div style={theme}>
+      
          <CssBaseline />
-         <Container maxWidth="lg" style={theme}>
+         <Container maxWidth="lg" >
          <Grid container spacing={3}>
         <Grid item xs={12}>
           <Header toggleTheme={toggleTheme} name={name} theme={theme}/>
+        </Grid>
+        <Grid item xs={12}>
+          <Menu/>
         </Grid>
         <Grid item xs={8}>
           <Content/>
@@ -64,8 +58,9 @@ const App = () => {
         </Grid>
       </Grid>
          </Container>
-      </ThemeContext.Provider>
-    </>
+         
+    </div>
+    </ThemeContext.Provider>
   );
 };
 export default App;
