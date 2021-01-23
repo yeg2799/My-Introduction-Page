@@ -1,24 +1,24 @@
-import React from "react";
-import { themes } from "../Settings/Settings";
-import Brightness4OutlinedIcon from '@material-ui/icons/Brightness4Outlined';
-import Brightness4Icon from '@material-ui/icons/Brightness4';
+import React,{useState} from "react";
 import Grid from "@material-ui/core/Grid";
-import ToggleButton from "@material-ui/lab/ToggleButton";
 import "../../style/Header/header.scss";
-
+import Switch from "react-switch";
 
 
 const Header = ({ toggleTheme, theme, name }) => {
+  const [checked,setChecked]=useState(false);
+  const handleChange=()=>{
+      toggleTheme();
+      checked===false?   setChecked(true): setChecked(false);
+  }
   return (
     <>
-      <Grid container>
+      <Grid container style={{marginTop:"30px"}}>
         <Grid item xs={11}>
-          <h1>Yunus Emre Güzel</h1>
+          <h1>{name}</h1>
         </Grid>
         <Grid item xs={1}>
-        <ToggleButton value="check" onClick={toggleTheme} style={{background:"#fff",color:"black",marginTop:"10px"}}>
-            {theme === themes.dark ? <Brightness4Icon fontSize="large"/> :<Brightness4OutlinedIcon fontSize="large"/>}
-          </ToggleButton>
+       <Switch  onChange={handleChange} checked={checked}></Switch>
+       
         </Grid>
       </Grid>
     </>

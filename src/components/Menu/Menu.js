@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuList from '@material-ui/core/MenuList';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,25 +16,21 @@ const useStyles = makeStyles((theme) => ({
   }));
 const Menu = () => {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(false);
-    const anchorRef = React.useRef(null);
-    // return focus to the button when we transitioned from !open -> open
-    const prevOpen = React.useRef(open);
-    React.useEffect(() => {
-      if (prevOpen.current === true && open === false) {
-        anchorRef.current.focus();
-      }
-  
-      prevOpen.current = open;
-    }, [open]);
+    const goLink=(e)=>{
+        console.log(e.target.textContent)
+    }
     return (
         <>
-      
-        <MenuList className={classes.root}>
-          <MenuItem>Profile</MenuItem>
+      <form >
+      <MenuList className={classes.root} onClick={goLink}>
+          <MenuItem><Link to="/profile">Profile</Link></MenuItem>
           <MenuItem>My account</MenuItem>
           <MenuItem>Logout</MenuItem>
+          <MenuItem>Logout</MenuItem>
+          <MenuItem>Logout</MenuItem>
         </MenuList>
+      </form>
+        
     
     </>
     )

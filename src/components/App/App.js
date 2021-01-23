@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 import Header from "../Header/Header";
 import Menu from "../Menu/Menu";
 import Content from "../PartCenter/Content";
@@ -10,20 +10,16 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import {themes,ThemeContext} from '../Settings/Settings'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+  }
 }));
-
 const App = () => {
-  const [name, setName] = useState("Emre");
+  const [name, setName] = useState("Yunus Emre Güzel");
   const [theme, setTheme] = useState(themes.dark);
+ 
   const classes=useStyles();
   const toggleTheme=()=>{
     if(theme===themes.dark){
@@ -37,9 +33,8 @@ const App = () => {
   return (
     <ThemeContext.Provider value={theme} >
     <div style={theme}>
-      
          <CssBaseline />
-         <Container maxWidth="lg" >
+         <Container maxWidth="lg" className={classes.root}>
          <Grid container spacing={3}>
         <Grid item xs={12}>
           <Header toggleTheme={toggleTheme} name={name} theme={theme}/>
