@@ -11,17 +11,16 @@ const Header = ({ toggleTheme, theme, name }) => {
       checked===false?   setChecked(true): setChecked(false);
   }
   return (
-    <>
+    <React.Fragment>
       <Grid container style={{marginTop:"30px"}}>
-        <Grid item xs={11}>
+        <Grid item sm={11} xs={12}>
           <h1>{name}</h1>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item sm={1} xs={12}>
        <Switch  onChange={handleChange} checked={checked}></Switch>
-       
         </Grid>
       </Grid>
-    </>
+    </React.Fragment>
   );
 };
 
