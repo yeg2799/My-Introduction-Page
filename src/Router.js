@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { history } from "./history";
 
 const HomePage = lazy(() => import("./components/App/App"));
-const Header = lazy(() => import("./components/Header/Header"));
+
 const App = () => {
   return (
     <Router history={history}>
