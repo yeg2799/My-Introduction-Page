@@ -1,7 +1,7 @@
 .menu{
-    
+   
     background:linear-gradient( #5F2C82 20%, #49A09D 70%);
-    
+    height: 930px;
     img{
         width: 250px;
         border-radius: 50%;
@@ -30,9 +30,19 @@
     }
     .menu-social{
         display: flex;
-        width:45%;
+        width:55%;
         margin: 0 auto;
+        a{
+            padding:5px;
+            &:hover{
+                background-color: #93EDC7;
+               
+                border-radius: 50%;
+            }
+        }
+       
     }
+    
     
 }
 

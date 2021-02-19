@@ -8,15 +8,13 @@ const App = () => {
   return (
     <div className="app">
       <Row>
-      <Col lg="3"  className="menu" >
+        <Col lg="3" style={{ padding: "0" }}>
           <Menu />
         </Col>
-        <Col style={{paddingLeft:"0px",paddingRight:"0px"}}>
-          <Content/>
+        <Col style={{ padding: "0" }}>
+          <Content />
         </Col>
       </Row>
-        
-     
     </div>
   );
 };

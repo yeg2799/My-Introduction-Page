@@ -8,7 +8,7 @@ import MyProject from './MyProject'
 
 const Content = () => {
     return (
-        <div style={{background:"#D7DDE8",height:"1024px"}}>
+        <div style={{background:"#D7DDE8",height:"930px"}}>
             <Switch>
                 <Route exact path="/">
                     <HomePage/>
@@ -26,8 +26,6 @@ const Content = () => {
                     <Contact/>
                 </Route>
             </Switch>
-            
-            
         </div>
     )
 }

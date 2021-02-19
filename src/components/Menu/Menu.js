@@ -12,7 +12,7 @@ const Menu = () => {
   const sliderMenu = () => {
     return (
       <div className="menu">
-        <Row>
+        <Row >
           <img src={profilePicture} alt="profilresmi"></img>
         </Row>
         <Row className="menu-links">
@@ -34,7 +34,6 @@ const Menu = () => {
             title="İletişim"
           />
         </Row>
-
         <Row className="menu-social">
           <a href="" target="_blank"><AiFillFacebook style={{ fontSize: "40px",color:"#13285E" }} /></a>
           <a href="" target="_blank"><AiFillInstagram style={{ fontSize: "40px",color:"#13285E" }} /></a>
