@@ -1,8 +1,11 @@
 import React from "react";
-import {  Row } from "reactstrap";
+import { Row } from "reactstrap";
 import "../../style/Menu/menu.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineHome } from "react-icons/ai";
+import { AiFillHome, AiFillProject, AiFillFacebook,AiFillInstagram,AiFillLinkedin,AiFillTwitterSquare,AiFillGithub } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
+import { FaBlogger } from "react-icons/fa";
+import { MdContactMail } from "react-icons/md";
 import profilePicture from "../../images/profile.jpg";
 import SideBarMenuButton from "./SideBarMenuButton";
 const Menu = () => {
@@ -13,14 +16,32 @@ const Menu = () => {
           <img src={profilePicture} alt="profilresmi"></img>
         </Row>
         <Row className="menu-links">
-            <SideBarMenuButton Icon={AiOutlineHome} to="/" title="Anasayfa"/>
-            <SideBarMenuButton Icon={AiOutlineHome} to="/hakkimda" title="Hakkımda"/>
-            <SideBarMenuButton Icon={AiOutlineHome} to="/projelerim" title="Projelerim"/>
-            <SideBarMenuButton Icon={AiOutlineHome} to="/blog" title="Blog"/>
-            <SideBarMenuButton Icon={AiOutlineHome} to="/iletisim" title="İletişim"/>
+          <SideBarMenuButton Icon={AiFillHome} to="/" title="Anasayfa" />
+          <SideBarMenuButton
+            Icon={BsFillPersonFill}
+            to="/hakkimda"
+            title="Hakkımda"
+          />
+          <SideBarMenuButton
+            Icon={AiFillProject}
+            to="/projelerim"
+            title="Projelerim"
+          />
+          <SideBarMenuButton Icon={FaBlogger} to="/blog" title="Blog" />
+          <SideBarMenuButton
+            Icon={MdContactMail}
+            to="/iletisim"
+            title="İletişim"
+          />
         </Row>
 
-        <Row >sosyal media hesapları</Row>
+        <Row className="menu-social">
+          <a href="" target="_blank"><AiFillFacebook style={{ fontSize: "40px",color:"#13285E" }} /></a>
+          <a href="" target="_blank"><AiFillInstagram style={{ fontSize: "40px",color:"#13285E" }} /></a>
+          <a href="" target="_blank"><AiFillLinkedin style={{ fontSize: "40px",color:"#13285E" }} /></a>
+          <a href="" target="_blank"><AiFillTwitterSquare style={{ fontSize: "40px",color:"#13285E" }} /></a>
+          <a href="" target="_blank"><AiFillGithub style={{ fontSize: "40px",color:"#13285E" }} /></a>
+        </Row>
       </div>
     );
   };

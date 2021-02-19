@@ -8,10 +8,10 @@ const App = () => {
   return (
     <div className="app">
       <Row>
-      <Col xs="3" style={{paddingLeft:"0px",paddingRight:"0px"}}>
+      <Col lg="3"  className="menu" >
           <Menu />
         </Col>
-        <Col xs="9" style={{paddingLeft:"0px",paddingRight:"0px"}}>
+        <Col style={{paddingLeft:"0px",paddingRight:"0px"}}>
           <Content/>
         </Col>
       </Row>

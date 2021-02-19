@@ -1,7 +1,7 @@
 .menu{
-    width: 100%;
+    
     background:linear-gradient( #5F2C82 20%, #49A09D 70%);
-    height: 1024px;
+    
     img{
         width: 250px;
         border-radius: 50%;
@@ -14,9 +14,12 @@
     }
     .menu-button{
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
         width:65%;
-        margin: 10px auto;
-        padding: 15px;
+        margin: 8px auto;
+        padding: 13px;
         font-size: 20px;
         font-weight: 600;
         background: #93EDC7;
@@ -24,6 +27,11 @@
         align-items: center;
         cursor: pointer;
        
+    }
+    .menu-social{
+        display: flex;
+        width:45%;
+        margin: 0 auto;
     }
     
 }
@@ -39,7 +47,11 @@
             width: 200px;
         }
         .menu-button{
-            width: 90%;
+            width: 95%;
+            
+        }
+        .menu-social{
+            width: 86%;
         }
     }
     
