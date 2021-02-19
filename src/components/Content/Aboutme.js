@@ -11,9 +11,9 @@ import {
 import "../../style/Menu/aboutme.scss";
 const Aboutme = () => {
   return (
-    <div className="about-me" style={{ paddingTop: "30px" }}>
+    <div className="about-me" style={{ paddingTop: "50px" }}>
       <h1 style={{ textAlign: "center" }}>Hakkımda</h1>
-      <Row style={{ marginTop: "60px", marginRight: "0px", marginLeft: "0" }}>
+      <Row style={{ marginTop: "40px", marginRight: "0px", marginLeft: "0" }}>
         <Col xs="4">
           <img
             src={profileImage}

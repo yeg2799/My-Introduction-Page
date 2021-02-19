@@ -8,7 +8,7 @@ import {
 import projectImage from '../../images/projectImage.jpg'
 const MyProject = () => {
   return (
-    <div>
+    <div style={{paddingTop:"50px"}}>
       <h1 style={{textAlign:"center"}}>Projelerim</h1>
       <Row style={{margin:"0",padding:"50px"}}>
       <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
