@@ -19,23 +19,25 @@ import {
     AiFillGithub,
   } from "react-icons/ai";
 import projectImage from "../../images/projectImage.jpg";
+import '../../style/Content/blog.scss'
 const Blog = () => {
   return (
     <div style={{ paddingTop: "50px" }}>
       <h1 style={{ textAlign: "center" }}>Blog Yazılarım</h1>
-      <Row style={{ margin: "0", display: "flex", justifyContent: "center" }}>
-        <Card style={{ width: "60%",borderRadius:"20px",marginTop:"30px" }}>
+      <Row className="blog-row">
+        {/*1 */}
+        <Card className="blog-card" >
           <Row>
-            <Col xs="3">
+            <Col xl="3" sm="5">
               <CardImg
                 top
-                width="100%"
+                
                 src={projectImage}
                 alt="Card image cap"
-                style={{marginTop:"25px",marginLeft:"20px",borderRadius:"20px"}}
+                className="blogCard-Image"
               />
             </Col>
-            <Col xs="9">
+            <Col xl="9" sm="7">
               <CardBody>
                 <CardTitle tag="h5">Card title</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">
@@ -83,19 +85,19 @@ const Blog = () => {
             </Col>
           </Row>
         </Card>
-            
-        <Card style={{ width: "60%",borderRadius:"20px",marginTop:"30px" }}>
+             {/*2*/}
+        <Card className="blog-card">
           <Row>
-            <Col xs="3">
+            <Col xl="3" sm="5">
               <CardImg
                 top
                 width="100%"
                 src={projectImage}
                 alt="Card image cap"
-                style={{marginTop:"25px",marginLeft:"20px",borderRadius:"20px"}}
+                className="blogCard-Image"
               />
             </Col>
-            <Col xs="9">
+            <Col xl="9" sm="7">
               <CardBody>
                 <CardTitle tag="h5">Card title</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">
@@ -143,19 +145,20 @@ const Blog = () => {
             </Col>
           </Row>
         </Card>
-
-        <Card style={{ width: "60%",borderRadius:"20px",marginTop:"30px" }}>
+ {/*3 */}
+        <Card className="blog-card">
           <Row>
-            <Col xs="3">
+            <Col xl="3" sm="5">
               <CardImg
                 top
                 width="100%"
                 src={projectImage}
                 alt="Card image cap"
-                style={{marginTop:"25px",marginLeft:"20px",borderRadius:"20px"}}
+                className="blogCard-Image"
+                
               />
             </Col>
-            <Col xs="9">
+            <Col xl="9" sm="7">
               <CardBody>
                 <CardTitle tag="h5">Card title</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">

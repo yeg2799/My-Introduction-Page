@@ -1,0 +1,42 @@
+.menu-social {
+  a {
+    padding: 7px;
+    &:hover {
+      background-color: #93edc7;
+
+      border-radius: 50%;
+    }
+  }
+}
+.insta {
+  width: 175px;
+  margin-left: 20px;
+  border-radius: 50%;
+  transition-duration: 1.5s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.about-img{
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.about-text{
+    display: flex;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media screen and (max-width: 1440px) {
+  .about-img {
+    width: 350px;
+  }
+ 
+}
+@media screen and (max-width: 1024px) {
+    .about-img {
+      width: 200px;
+    }
+  }

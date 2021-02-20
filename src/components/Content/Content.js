@@ -5,10 +5,10 @@ import Blog from './Blog'
 import Contact from './Contact'
 import HomePage from './HomePage'
 import MyProject from './MyProject'
-
+import '../../style/Content/content.scss'
 const Content = () => {
     return (
-        <div style={{background:"#D7DDE8",height:"930px"}}>
+        <div class="content" >
             <Switch>
                 <Route exact path="/">
                     <HomePage/>

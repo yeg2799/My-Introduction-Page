@@ -8,7 +8,7 @@ import {
   AiFillTwitterSquare,
   AiFillGithub,
 } from "react-icons/ai";
-import "../../style/Menu/aboutme.scss";
+import "../../style/Content/aboutme.scss";
 const Aboutme = () => {
   return (
     <div className="about-me" style={{ paddingTop: "50px" }}>
@@ -16,26 +16,18 @@ const Aboutme = () => {
       <Row style={{ marginTop: "40px", marginRight: "0px", marginLeft: "0" }}>
         <Col xs="4">
           <img
+          className="about-img"
             src={profileImage}
             alt="sacasc"
-            style={{
-              display: "flex",
-              width: "400px",
-              margin: "0 auto",
-              borderRadius: "20px",
-            }}
+           
           ></img>
         </Col>
-        <Col xs="7">
+        <Col >
           <div>
             <div>
               <span
-                style={{
-                  display: "flex",
-                  margin: "0 auto",
-                  fontSize: "18px",
-                  fontWeight: "600",
-                }}
+              class="about-text"
+             
               >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
                 id velit neque at hic vero, dicta expedita praesentium officia

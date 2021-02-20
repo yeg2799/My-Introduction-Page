@@ -2,7 +2,15 @@ import React from "react";
 import { Row } from "reactstrap";
 import "../../style/Menu/menu.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiFillHome, AiFillProject, AiFillFacebook,AiFillInstagram,AiFillLinkedin,AiFillTwitterSquare,AiFillGithub } from "react-icons/ai";
+import {
+  AiFillHome,
+  AiFillProject,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterSquare,
+  AiFillGithub,
+} from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FaBlogger } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
@@ -12,7 +20,7 @@ const Menu = () => {
   const sliderMenu = () => {
     return (
       <div className="menu">
-        <Row >
+        <Row>
           <img src={profilePicture} alt="profilresmi"></img>
         </Row>
         <Row className="menu-links">
@@ -35,11 +43,21 @@ const Menu = () => {
           />
         </Row>
         <Row className="menu-social">
-          <a href="" target="_blank"><AiFillFacebook style={{ fontSize: "40px",color:"#13285E" }} /></a>
-          <a href="" target="_blank"><AiFillInstagram style={{ fontSize: "40px",color:"#13285E" }} /></a>
-          <a href="" target="_blank"><AiFillLinkedin style={{ fontSize: "40px",color:"#13285E" }} /></a>
-          <a href="" target="_blank"><AiFillTwitterSquare style={{ fontSize: "40px",color:"#13285E" }} /></a>
-          <a href="" target="_blank"><AiFillGithub style={{ fontSize: "40px",color:"#13285E" }} /></a>
+          <a href="" target="_blank">
+            <AiFillFacebook class="icon" />
+          </a>
+          <a href="" target="_blank">
+            <AiFillInstagram class="icon" />
+          </a>
+          <a href="" target="_blank">
+            <AiFillLinkedin class="icon" />
+          </a>
+          <a href="" target="_blank">
+            <AiFillTwitterSquare class="icon" />
+          </a>
+          <a href="" target="_blank">
+            <AiFillGithub class="icon" />
+          </a>
         </Row>
       </div>
     );
