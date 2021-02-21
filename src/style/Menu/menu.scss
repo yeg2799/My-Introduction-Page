@@ -75,15 +75,18 @@
     }
   }
 }
-// @media screen and (min-width: 1440px) {
-//     .menu-social{
-//         width: 70%;
-//     }
+// @media screen and (max-width: 1440px) {
+//   .menu {
+//     min-height: 795px;
+//   }
 // }
   
 @media screen and (max-width: 1024px) {
   .menu {
+    padding-left: 20px;
+    height: 1000px;
     img {
+     
       width: 200px;
     }
     .menu-links{
@@ -94,8 +97,14 @@
       width: 90%;
     }
     .menu-social {
-        margin-left: 13px;
-      width: 95%;
+     
+      width: 91%;
+      a {
+        .icon {
+          font-size: 24px;
+        }
+        padding: 10px;
+      }
     }
   }
 }

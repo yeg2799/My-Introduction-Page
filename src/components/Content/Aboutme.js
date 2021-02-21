@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "reactstrap";
 import profileImage from "../../images/profile.jpg";
 import {
@@ -10,6 +10,33 @@ import {
 } from "react-icons/ai";
 import "../../style/Content/aboutme.scss";
 const Aboutme = () => {
+  const [text,setText]=useState(`
+  Lorem ipsum dolor sit amet"
+  consectetur adipisicing elit. Cumqueid velit neque at hic vero, dicta expedita praesentium officia
+  adipisci sequi animi consequuntur dignissimos incidunt iure
+  dolore. Debitis, fuga minima? Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit. Cumque id velit neque at hic vero,
+  dicta expedita praesentium officia adipisci sequi animi
+  consequuntur dignissimos incidunt iure dolore. Debitis, fuga
+  minima? Lorem ipsum dolor sit amet, consectetur adipisicing
+  elit. Cumque id velit neque at hic vero, dicta expedita
+  praesentium officia adipisci sequi animi consequuntur
+  dignissimos incidunt iure dolore. Debitis, fuga minima? Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit. Cumque id
+  velit neque at hic vero, dicta expedita praesentium officia
+  adipisci sequi animi consequuntur dignissimos incidunt iure
+  dolore. Debitis, fuga minima? Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit. Cumque id velit neque at hic vero,
+  dicta expedita praesentium officia adipisci sequi animi
+  consequuntur dignissimos incidunt iure dolore. Debitis, fuga
+  minima? Lorem ipsum dolor sit amet, consectetur adipisicing
+  elit. Cumque id velit neque at hic vero, dicta expedita
+  praesentium officia adipisci sequi animi consequuntur
+  dignissimos incidunt iure dolore. Debitis, fuga minima? Lorem
+  ipsum dolor sit amet, consectetur adipisicing elit. Cumque id
+  velit neque at hic vero, dicta expedita praesentium officia
+  adipisci sequi animi consequuntur dignissimos incidunt iure
+  dolore. Debitis, fuga minima?`)
   return (
     <div className="about-me" style={{ paddingTop: "50px" }}>
       <h1 style={{ textAlign: "center" }}>Hakkımda</h1>
@@ -27,34 +54,9 @@ const Aboutme = () => {
             <div>
               <span
               class="about-text"
-             
+              
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-                id velit neque at hic vero, dicta expedita praesentium officia
-                adipisci sequi animi consequuntur dignissimos incidunt iure
-                dolore. Debitis, fuga minima? Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Cumque id velit neque at hic vero,
-                dicta expedita praesentium officia adipisci sequi animi
-                consequuntur dignissimos incidunt iure dolore. Debitis, fuga
-                minima? Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Cumque id velit neque at hic vero, dicta expedita
-                praesentium officia adipisci sequi animi consequuntur
-                dignissimos incidunt iure dolore. Debitis, fuga minima? Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Cumque id
-                velit neque at hic vero, dicta expedita praesentium officia
-                adipisci sequi animi consequuntur dignissimos incidunt iure
-                dolore. Debitis, fuga minima? Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Cumque id velit neque at hic vero,
-                dicta expedita praesentium officia adipisci sequi animi
-                consequuntur dignissimos incidunt iure dolore. Debitis, fuga
-                minima? Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Cumque id velit neque at hic vero, dicta expedita
-                praesentium officia adipisci sequi animi consequuntur
-                dignissimos incidunt iure dolore. Debitis, fuga minima? Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Cumque id
-                velit neque at hic vero, dicta expedita praesentium officia
-                adipisci sequi animi consequuntur dignissimos incidunt iure
-                dolore. Debitis, fuga minima?
+                {text.slice(0,1150)+"...devamını okumak için"}
               </span>
 
               <div

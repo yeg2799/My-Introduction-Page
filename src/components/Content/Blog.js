@@ -205,12 +205,7 @@ const Blog = () => {
               </CardBody>
             </Col>
           </Row>
-        </Card>
-
-        
-
-
-        
+        </Card>    
       </Row>
 
 
