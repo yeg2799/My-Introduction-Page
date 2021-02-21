@@ -1,0 +1,10 @@
+.hpage-img{
+    width: 1000px;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+@media screen and (min-width: 2560px) {
+    .hpage-img{
+        width: 1300px;
+    }
+  }

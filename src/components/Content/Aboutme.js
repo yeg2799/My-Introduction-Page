@@ -41,7 +41,7 @@ const Aboutme = () => {
     <div className="about-me" style={{ paddingTop: "50px" }}>
       <h1 style={{ textAlign: "center" }}>Hakkımda</h1>
       <Row style={{ marginTop: "40px", marginRight: "0px", marginLeft: "0" }}>
-        <Col xs="4">
+        <Col sm="4">
           <img
           className="about-img"
             src={profileImage}

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const SideBarMenuButton = ({Icon,to,title}) => {
     return (
         <div className="menu-button">
-            <Icon style={{color:"#13285E"}}/>
+            <Icon  className="icon"/>
             <Link to={to} style={{color:"#13285E",textDecoration:"none"}}>{title}</Link>
         </div>
     )

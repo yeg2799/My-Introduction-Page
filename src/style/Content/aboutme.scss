@@ -29,6 +29,15 @@
     font-size: 18px;
     font-weight: 600;
 }
+@media screen and (min-width: 2560px) {
+  .about-text{
+    font-size: 25px;
+   
+  }
+  .about-img{
+    width: 600px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .about-img {
     width: 350px;
