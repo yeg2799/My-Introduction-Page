@@ -8,3 +8,30 @@
         width: 1300px;
     }
   }
+
+  @media screen and (max-width: 1440px) {
+    .hpage-img{
+        width: 850px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .hpage-img{
+        width: 600px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .hpage-img{
+        width: 350px;
+        padding-top: 150px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .hpage-img{
+        width: 300px;
+    }
+  }
+  @media screen and (max-width: 325px) {
+    .hpage-img{
+        width: 260px;
+    }
+  }
