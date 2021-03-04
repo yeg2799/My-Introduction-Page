@@ -16,6 +16,7 @@ import { FaBlogger } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 import profilePicture from "../../images/profile.jpg";
 import SideBarMenuButton from "./SideBarMenuButton";
+import { Link } from "react-router-dom";
 const Menu = () => {
   const sliderMenu = () => {
     return (
@@ -24,23 +25,30 @@ const Menu = () => {
           <img src={profilePicture} alt="profilresmi"></img>
         </Row>
         <Row className="menu-links">
-          <SideBarMenuButton Icon={AiFillHome} to="/" title="Anasayfa" />
-          <SideBarMenuButton
-            Icon={BsFillPersonFill}
-            to="/hakkimda"
-            title="Hakkımda"
-          />
+          <Link to="/" className="link">
+            <SideBarMenuButton Icon={AiFillHome} title="Anasayfa" />
+          </Link>
+          <Link to="/hakkimda" className="link">
+            <SideBarMenuButton Icon={BsFillPersonFill} title="Hakkımda" />
+          </Link>
+          <Link to="/projelerim" className="link">
           <SideBarMenuButton
             Icon={AiFillProject}
-            to="/projelerim"
             title="Projelerim"
           />
+          </Link>
+          <Link to="/blog" className="link">
           <SideBarMenuButton Icon={FaBlogger} to="/blog" title="Blog" />
+          </Link>
+          <Link to="/iletisim" className="link">
           <SideBarMenuButton
             Icon={MdContactMail}
             to="/iletisim"
             title="İletişim"
           />
+          </Link>
+         
+          
         </Row>
         <Row className="menu-social">
           <a href="" target="_blank">

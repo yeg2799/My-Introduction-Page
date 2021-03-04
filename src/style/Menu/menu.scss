@@ -12,6 +12,13 @@
     display: flex;
     flex-direction: column;
     margin: 80px auto;
+    .link{
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: #13285E;
+      
+    }
     .menu-button {
       display: flex;
       flex-direction: row;
@@ -28,20 +35,14 @@
       align-items: center;
       cursor: pointer;
       &:hover{
-        background: black;
-        color: white;
+        background: #13285E;
+        color: #93edc7;
       }
       .icon{
         font-size: 32px;
       }
      
-      .menu-link{
-        text-decoration: none;
-        text-align: center;
-        padding-left: 5px;
-        color:#13285E;
-        
-      }
+     
       
     }
   }
