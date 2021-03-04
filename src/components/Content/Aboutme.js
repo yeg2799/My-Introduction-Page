@@ -37,6 +37,7 @@ const Aboutme = () => {
   velit neque at hic vero, dicta expedita praesentium officia
   adipisci sequi animi consequuntur dignissimos incidunt iure
   dolore. Debitis, fuga minima?`)
+  const [img,setImg]=useState([{src:profileImage},{src:profileImage},{src:profileImage},{src:profileImage},{src:profileImage}]);
   return (
     <div className="about-me" style={{ paddingTop: "50px" }}>
       <h1 style={{ textAlign: "center" }}>Hakkımda</h1>
@@ -56,7 +57,7 @@ const Aboutme = () => {
               class="about-text"
               
               >
-                {text.slice(0,1150)+"...devamını okumak için"}
+                {text.slice(0,700)+"...devamını okumak için"}
               </span>
 
               <div
@@ -103,14 +104,12 @@ const Aboutme = () => {
           <AiFillInstagram style={{ fontSize: "40px", color: "#13285E" }} />
           <h3>Instagram</h3>
         </div>
-        <div style={{paddingTop:"10px"}}>
-          <img src={profileImage} alt="" className="insta"></img>
-          <img src={profileImage} alt="" className="insta"></img>
-          <img src={profileImage} alt="" className="insta"></img>
-          <img src={profileImage} alt="" className="insta"></img>
-          <img src={profileImage} alt="" className="insta"></img>
-          <img src={profileImage} alt="" className="insta"></img>
-          <img src={profileImage} alt="" className="insta"></img>
+        <div  className="instagram-images">
+          {img.length!==0? img.map(image=>(
+            <img src={image.src} alt="" className="insta"></img>
+          )):"Boş"}
+          
+         
         </div>
       </Row>
     </div>
