@@ -32,15 +32,11 @@ const Aboutme = () => {
     { src: profileImage },
   ]);
   return (
-    <div className="about-me" style={{ paddingTop: "50px" }}>
+    <div className="about">
       <h1 style={{ textAlign: "center" }}>Hakkımda</h1>
-     
-      <Row style={{ marginTop: "40px", marginRight: "0px", marginLeft: "0" }}>
-        <Col sm="4">
-          <img className="about-img" src={profileImage} alt="sacasc"></img>
-        </Col>
-        <Col>
-          <div>
+      <div className="about-me">
+      <img className="about-img" src={profileImage} alt="sacasc"></img>
+      <div>
             <div>
               <span class="about-text">
                 {text}
@@ -72,17 +68,11 @@ const Aboutme = () => {
               </div>
             </div>
           </div>
-        </Col>
-      </Row>
+      </div>
       <hr></hr>
-      <Row style={{ marginRight: "0", marginLeft: "0", display: "flex" }}>
+      <div className="socialMedia" >
         <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "center",
-            textAlign: "center",
-          }}
+        className="socialMedia-Top"
         >
           <AiFillInstagram style={{ fontSize: "40px", color: "#13285E" }} />
           <h3>Instagram</h3>
@@ -94,7 +84,7 @@ const Aboutme = () => {
               ))
             : "Boş"}
         </div>
-      </Row>
+      </div>
     </div>
   );
 };

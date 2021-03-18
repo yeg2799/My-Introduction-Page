@@ -1,3 +1,23 @@
+.about {
+  padding-top: 50px;
+}
+.about-me {
+  display: flex;
+  padding: 20px;
+  .about-img {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  .about-text {
+    display: flex;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
 .menu-social {
   display: flex;
   justify-content: space-around;
@@ -11,58 +31,96 @@
     }
   }
 }
-.instagram-images{
-  padding-top: 10px;
-  padding-left: 40px;
-}
-.insta {
-  width: 175px;
-  margin-left: 20px;
-  border-radius: 50%;
-  transition-duration: 1.5s;
-  &:hover {
-    opacity: 0.6;
-  }
-}
 
-.about-img{
+.socialMedia{
   display: flex;
-  width: 400px;
-  margin: 0 auto;
-  border-radius: 20px;
-}
-.about-text{
+  flex-direction: column;
+  .socialMedia-Top{
     display: flex;
-    margin: 0 auto;
-    font-size: 18px;
-    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+  }
+  .instagram-images {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .insta {
+    width: 175px;
+    margin-left: 20px;
+    border-radius: 50%;
+    transition-duration: 1.5s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }
 @media screen and (min-width: 2560px) {
-  .menu-social{
+  .menu-social {
     padding-top: 290px;
   }
-  .about-text{
+  .about-text {
     font-size: 25px;
-   
   }
-  .about-img{
+  .about-img {
     width: 600px;
   }
 }
 @media screen and (max-width: 1440px) {
-  .menu-social{
+  .menu-social {
     padding-top: 60px;
   }
   .about-img {
     width: 350px;
   }
- 
 }
 @media screen and (max-width: 1024px) {
-  .menu-social{
+  .menu-social {
     padding-top: 60px;
   }
-    .about-img {
-      width: 200px;
+  .socialMedia{
+    .insta {
+      width: 120px;
     }
   }
+  
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 10px;
+  }
+  .about-me {
+    flex-direction: column;
+    padding: 0px;
+    .about-text {
+      padding-top: 20px;
+    }
+  }
+  .socialMedia{
+    .instagram-images {
+     flex-direction: column;
+    }
+    .insta {
+      width: 400px;
+     border-radius: 10px;
+      padding-top: 10px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-me{
+    .about-img {
+      width: 300px;
+    }
+  }
+  .socialMedia{
+    .instagram-images {
+     flex-direction: column;
+    }
+    .insta {
+      width: 280px;
+    }
+  }
+  
+}
+
