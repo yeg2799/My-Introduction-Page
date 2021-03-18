@@ -20,6 +20,8 @@ import {
   } from "react-icons/ai";
 import projectImage from "../../images/projectImage.jpg";
 import '../../style/Content/blog.scss'
+import { Link } from "react-router-dom";
+import SocialMedia from "../../components/socialMedia";
 const Blog = () => {
   return (
     <div style={{ paddingTop: "50px" }}>
@@ -55,31 +57,11 @@ const Blog = () => {
                   
                 }}
               >
-                <a href="https://www.facebook.com/emre.guzel.3386/" target="_blank">
-                  <AiFillFacebook
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="https://www.instagram.com/_emrguzel_/" target="_blank">
-                  <AiFillInstagram
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/" target="_blank">
-                  <AiFillLinkedin
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="https://twitter.com/emrex99" target="_blank">
-                  <AiFillTwitterSquare
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="https://github.com/yeg2799" target="_blank">
-                  <AiFillGithub
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
+                <SocialMedia href="https://www.facebook.com/emre.guzel.3386/"  Icon={AiFillFacebook} />
+                <SocialMedia href="https://www.instagram.com/_emrguzel_/"  Icon={AiFillInstagram} />
+                <SocialMedia href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/" Icon={AiFillLinkedin}/>
+                <SocialMedia href="https://twitter.com/emrex99"  Icon={AiFillTwitterSquare}/>
+                <SocialMedia href="https://github.com/yeg2799" Icon={AiFillGithub}/>
               </div>
               </CardBody>
             </Col>

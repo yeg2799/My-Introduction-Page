@@ -17,10 +17,11 @@ import { MdContactMail } from "react-icons/md";
 import profilePicture from "../../images/profile.jpg";
 import SideBarMenuButton from "./SideBarMenuButton";
 import { Link } from "react-router-dom";
+import SocialMedia from "../../components/socialMedia";
 const Menu = () => {
   const sliderMenu = () => {
     return (
-      <div className="menu">
+      <div>
         <Row>
           <img src={profilePicture} alt="profilresmi"></img>
         </Row>
@@ -32,52 +33,57 @@ const Menu = () => {
             <SideBarMenuButton Icon={BsFillPersonFill} title="Hakkımda" />
           </Link>
           <Link to="/projelerim" className="link">
-          <SideBarMenuButton
-            Icon={AiFillProject}
-            title="Projelerim"
-          />
+            <SideBarMenuButton Icon={AiFillProject} title="Projelerim" />
           </Link>
           <Link to="/blog" className="link">
-          <SideBarMenuButton Icon={FaBlogger} to="/blog" title="Blog" />
+            <SideBarMenuButton Icon={FaBlogger} to="/blog" title="Blog" />
           </Link>
           <Link to="/iletisim" className="link">
-          <SideBarMenuButton
-            Icon={MdContactMail}
-            to="/iletisim"
-            title="İletişim"
-          />
+            <SideBarMenuButton
+              Icon={MdContactMail}
+              to="/iletisim"
+              title="İletişim"
+            />
           </Link>
-         
-          
         </Row>
         <Row className="menu-social">
-          <a href="https://www.facebook.com/emre.guzel.3386/" target="_blank">
-            <AiFillFacebook class="icon" />
-          </a>
-          <a href="https://www.instagram.com/_emrguzel_/" target="_blank">
-            <AiFillInstagram class="icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/" target="_blank">
-            <AiFillLinkedin class="icon" />
-          </a>
-          <a href="https://twitter.com/emrex99" target="_blank">
-            <AiFillTwitterSquare class="icon" />
-          </a>
-          <a href="https://github.com/yeg2799" target="_blank">
-            <AiFillGithub class="icon" />
-          </a>
+          <SocialMedia
+            href="https://www.facebook.com/emre.guzel.3386/"
+            Icon={AiFillFacebook}
+          />
+          <SocialMedia
+            href="https://www.instagram.com/_emrguzel_/"
+            Icon={AiFillInstagram}
+          />
+          <SocialMedia
+            href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/"
+            Icon={AiFillLinkedin}
+          />
+          <SocialMedia
+            href="https://twitter.com/emrex99"
+            Icon={AiFillTwitterSquare}
+          />
+          <SocialMedia href="https://github.com/yeg2799" Icon={AiFillGithub} />
         </Row>
       </div>
     );
   };
-  return (
-    <React.Fragment>
-      {sliderMenu()}
+  const smallMenu = () => {
+    return (
       <div className="menu-hamburger">
-        <GiHamburgerMenu onSubmit={sliderMenu()} />
+        <GiHamburgerMenu className="icon" />
       </div>
-    </React.Fragment>
-  );
+    );
+  };
+
+  return (
+    <div className="menu">
+
+  {window.screen.width> 767 ? sliderMenu() : smallMenu()}
+  
+  </div>
+  )
+  
 };
 
 export default Menu;

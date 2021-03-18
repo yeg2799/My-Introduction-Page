@@ -2,7 +2,7 @@
   background: linear-gradient(#5f2c82 20%, #49a09d 70%);
   min-height: 930px;
   color: black;
-  
+
   img {
     width: 250px;
     border-radius: 50%;
@@ -63,10 +63,23 @@
     }
   }
 }
-
-.menu-hamburger {
-  display: none;
+.menu-hamburger{
+  display: flex;
+  background-color: #D7DDE8;
+  color: black;
+  padding-left: 20px;
+  .icon{
+    font-size: 50px;
+   
+  }
 }
+.sideNav{
+  width: 250px;
+  position: fixed;
+  top: 0px;
+  left: -100px;
+}
+
 @media screen and (min-width: 2560px) {
   .menu {
     min-height: 1440px;
@@ -155,10 +168,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-  .menu-hamburger {
-    display: flex;
-  }
+ .menu{
+   width: 100%;
+ }
 }

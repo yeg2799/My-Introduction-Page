@@ -7,11 +7,12 @@ import Content from "../Content/Content";
 const App = () => {
   return (
     <div className="app">
+      
       <Row>
-        <Col lg="3" style={{ padding: "0" }}>
+        <Col lg="3" style={{ padding:0,margin:0 }}>
           <Menu />
         </Col>
-        <Col style={{ padding: "0" }}>
+        <Col style={{ padding:0,margin:0 }}>
           <Content />
         </Col>
       </Row>
