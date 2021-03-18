@@ -51,19 +51,19 @@ const Menu = () => {
           
         </Row>
         <Row className="menu-social">
-          <a href="" target="_blank">
+          <a href="https://www.facebook.com/emre.guzel.3386/" target="_blank">
             <AiFillFacebook class="icon" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.instagram.com/_emrguzel_/" target="_blank">
             <AiFillInstagram class="icon" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/" target="_blank">
             <AiFillLinkedin class="icon" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://twitter.com/emrex99" target="_blank">
             <AiFillTwitterSquare class="icon" />
           </a>
-          <a href="" target="_blank">
+          <a href="https://github.com/yeg2799" target="_blank">
             <AiFillGithub class="icon" />
           </a>
         </Row>

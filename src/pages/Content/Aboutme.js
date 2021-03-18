@@ -68,27 +68,27 @@ const Aboutme = () => {
                   paddingTop: "40px",
                 }}
               >
-                <a href="" target="_blank">
+                <a href="https://www.facebook.com/emre.guzel.3386/" target="_blank">
                   <AiFillFacebook
                     style={{ fontSize: "40px", color: "#13285E" }}
                   />
                 </a>
-                <a href="" target="_blank">
+                <a href="https://www.instagram.com/_emrguzel_/" target="_blank">
                   <AiFillInstagram
                     style={{ fontSize: "40px", color: "#13285E" }}
                   />
                 </a>
-                <a href="" target="_blank">
+                <a href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/" target="_blank">
                   <AiFillLinkedin
                     style={{ fontSize: "40px", color: "#13285E" }}
                   />
                 </a>
-                <a href="" target="_blank">
+                <a href="https://twitter.com/emrex99" target="_blank">
                   <AiFillTwitterSquare
                     style={{ fontSize: "40px", color: "#13285E" }}
                   />
                 </a>
-                <a href="" target="_blank">
+                <a href="https://github.com/yeg2799" target="_blank">
                   <AiFillGithub
                     style={{ fontSize: "40px", color: "#13285E" }}
                   />
