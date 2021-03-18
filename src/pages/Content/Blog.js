@@ -24,23 +24,17 @@ import { Link } from "react-router-dom";
 import SocialMedia from "../../components/socialMedia";
 const Blog = () => {
   return (
-    <div style={{ paddingTop: "50px" }}>
-      <h1 style={{ textAlign: "center" }}>Blog Yazılarım</h1>
-      <Row className="blog-row">
+    <div className="blog">
+      <h1  className="blog-title">Blog Yazılarım</h1>
+      <div className="blog-row">
         {/*1 */}
-        <Card className="blog-card" >
-          <Row>
-            <Col xl="3" sm="5">
+        <Card className="blog-card">
               <CardImg
-                top
-                
                 src={projectImage}
                 alt="Card image cap"
                 className="blogCard-Image"
               />
-            </Col>
-            <Col xl="9" sm="7">
-              <CardBody>
+              <CardBody className="blogCard-body">
                 <CardTitle tag="h5">Card title</CardTitle>
                 <CardSubtitle tag="h6" className="mb-2 text-muted">
                   Card subtitle
@@ -59,10 +53,10 @@ const Blog = () => {
                 <SocialMedia href="https://github.com/yeg2799" Icon={AiFillGithub}/>
               </div>
               </CardBody>
-            </Col>
-          </Row>
+           
+         
         </Card> 
-      </Row>
+      </div>
 
 
 
