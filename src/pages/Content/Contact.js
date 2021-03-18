@@ -5,7 +5,7 @@ import {GrMail} from 'react-icons/gr'
 import '../../style/Content/contact.scss'
 const Contact = () => {
     return (
-        <div style={{paddingTop:"150px"}}>
+        <div style={{paddingTop:"250px"}}>
            <h1 style={{textAlign:"center"}}>İletişim</h1> 
            <Form style={{width:"50%",margin:"50px auto"}}>
       <Row form >

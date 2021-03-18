@@ -5,13 +5,14 @@ import {
   CardTitle,
   Row,
 } from "reactstrap";
-import projectImage from '../../images/projectImage.jpg'
+import projectImage from '../../images/projectImage.jpg';
+import '../../style/Content/myProject.scss';
 const MyProject = () => {
   return (
-    <div style={{paddingTop:"50px"}}>
-      <h1 style={{textAlign:"center"}}>Projelerim</h1>
-      <Row style={{margin:"0",padding:"50px"}}>
-      <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
+    <div className="my-project">
+      <h1 className="my-project-title">Projelerim</h1>
+      <Row  className="my-project-row">
+      <Card className="my-project-card">
       <CardTitle tag="h3" style={{textAlign:"center"}}>Card title</CardTitle>
         <CardImg
           top
@@ -20,7 +21,7 @@ const MyProject = () => {
           alt="Card image cap"
         />
       </Card>
-      <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
+      <Card className="my-project-card">
       <CardTitle tag="h3" style={{textAlign:"center"}}>Card title</CardTitle>
         <CardImg
           top
@@ -29,7 +30,7 @@ const MyProject = () => {
           alt="Card image cap"
         />
       </Card>
-      <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
+      <Card className="my-project-card">
       <CardTitle tag="h3" style={{textAlign:"center"}}>Card title</CardTitle>
         <CardImg
           top
@@ -38,7 +39,7 @@ const MyProject = () => {
           alt="Card image cap"
         />
       </Card>
-      <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
+      <Card className="my-project-card">
       <CardTitle tag="h3" style={{textAlign:"center"}}>Card title</CardTitle>
         <CardImg
           top
@@ -47,7 +48,7 @@ const MyProject = () => {
           alt="Card image cap"
         />
       </Card>
-      <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
+      <Card className="my-project-card">
       <CardTitle tag="h3" style={{textAlign:"center"}}>Card title</CardTitle>
         <CardImg
           top
@@ -56,7 +57,7 @@ const MyProject = () => {
           alt="Card image cap"
         />
       </Card>
-      <Card style={{width:"30%",margin:"20px",borderRadius:"20px"}}>
+      <Card className="my-project-card">
       <CardTitle tag="h3" style={{textAlign:"center"}}>Card title</CardTitle>
         <CardImg
           top

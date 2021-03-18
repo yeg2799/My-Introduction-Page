@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Spinner } from "reactstrap";
 import { history } from "./history";
 
-const AppHome = lazy(() => import("./components/App/App"));
+const AppHome = lazy(() => import("./pages/App/App"));
 
 
 const App = () => {
