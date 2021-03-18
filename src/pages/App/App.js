@@ -7,15 +7,17 @@ import Content from "../Content/Content";
 const App = () => {
   return (
     <div className="app">
-      
-      <Row>
+      <Menu/>
+      <Content/>
+      {/* <Row>
         <Col lg="3" style={{ padding:0,margin:0 }}>
           <Menu />
         </Col>
         <Col style={{ padding:0,margin:0 }}>
           <Content />
         </Col>
-      </Row>
+      </Row> */}
+     
     </div>
   );
 };

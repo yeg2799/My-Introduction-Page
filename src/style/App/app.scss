@@ -1,6 +1,21 @@
 .app{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; 
+    width: 100%;
+    display: flex;
+    min-height: 947px;
 }
-
+@media screen and (min-width: 2560px) {
+    .app{
+        min-height: 1136px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .app{
+        min-height: 795px;
+    }
+}
+@media screen and (max-width: 768px) {
+        .app{
+                display: flex;
+                flex-direction: column;
+        }
+  }

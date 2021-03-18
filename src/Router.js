@@ -4,18 +4,20 @@ import { Spinner } from "reactstrap";
 import { history } from "./history";
 
 const AppHome = lazy(() => import("./pages/App/App"));
-
-
+const AboutMe=lazy(()=> import("./pages/Content/Aboutme"));
+const MyProjects=lazy(()=> import("./pages/Content/MyProject"));
+const Blogs=lazy(()=> import("./pages/Content/Blog"));
+const Contact=lazy(()=> import("./pages/Content/Contact"));
 const App = () => {
   return (
     <Router history={history}>
-      <Suspense fallback={<Spinner color="success" style={{display:"flex",margin:"0 auto"}}/>}>
+      <Suspense fallback={<Spinner color="success"/>}>
         <Switch>
-          <Route exact path="/" component={AppHome} />
-          <Route exact path="/hakkimda" component={AppHome} />
-          <Route exact path="/projelerim" component={AppHome} />
-          <Route exact path="/blog" component={AppHome} />
-          <Route exact path="/iletisim" component={AppHome} />
+          <Route  path="/" component={AppHome} />
+          <Route  path="/hakkimda" component={AboutMe} />
+          <Route  path="/projelerim" component={MyProjects} />
+          <Route  path="/blog" component={Blogs} />
+          <Route  path="/iletisim" component={Contact} />
         </Switch>
       </Suspense>
     </Router>

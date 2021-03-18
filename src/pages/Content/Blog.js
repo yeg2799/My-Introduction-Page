@@ -51,11 +51,6 @@ const Blog = () => {
                 </CardText>
                 <div
                 className="menu-social"
-                style={{
-                  display: "flex",
-                  justifyContent: "space-around",
-                  
-                }}
               >
                 <SocialMedia href="https://www.facebook.com/emre.guzel.3386/"  Icon={AiFillFacebook} />
                 <SocialMedia href="https://www.instagram.com/_emrguzel_/"  Icon={AiFillInstagram} />
@@ -66,134 +61,13 @@ const Blog = () => {
               </CardBody>
             </Col>
           </Row>
-        </Card>
-             {/*2*/}
-        <Card className="blog-card">
-          <Row>
-            <Col xl="3" sm="5">
-              <CardImg
-                top
-                width="100%"
-                src={projectImage}
-                alt="Card image cap"
-                className="blogCard-Image"
-              />
-            </Col>
-            <Col xl="9" sm="7">
-              <CardBody>
-                <CardTitle tag="h5">Card title</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  Card subtitle
-                </CardSubtitle>
-                <CardText>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </CardText>
-                <div
-                className="menu-social"
-                style={{
-                  display: "flex",
-                  justifyContent: "space-around",
-                  
-                }}
-              >
-                <a href="" target="_blank">
-                  <AiFillFacebook
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillInstagram
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillLinkedin
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillTwitterSquare
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillGithub
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-              </div>
-              </CardBody>
-            </Col>
-          </Row>
-        </Card>
- {/*3 */}
-        <Card className="blog-card">
-          <Row>
-            <Col xl="3" sm="5">
-              <CardImg
-                top
-                width="100%"
-                src={projectImage}
-                alt="Card image cap"
-                className="blogCard-Image"
-                
-              />
-            </Col>
-            <Col xl="9" sm="7">
-              <CardBody>
-                <CardTitle tag="h5">Card title</CardTitle>
-                <CardSubtitle tag="h6" className="mb-2 text-muted">
-                  Card subtitle
-                </CardSubtitle>
-                <CardText>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </CardText>
-                <div
-                className="menu-social"
-                style={{
-                  display: "flex",
-                  justifyContent: "space-around",
-                  
-                }}
-              >
-                <a href="" target="_blank">
-                  <AiFillFacebook
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillInstagram
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillLinkedin
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillTwitterSquare
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-                <a href="" target="_blank">
-                  <AiFillGithub
-                    style={{ fontSize: "40px", color: "#13285E" }}
-                  />
-                </a>
-              </div>
-              </CardBody>
-            </Col>
-          </Row>
-        </Card>    
+        </Card> 
       </Row>
 
 
 
 
-      <Pagination aria-label="Page navigation example" style={{display:"flex",justifyContent:"center",marginTop:"30px"}}>
+      {/* <Pagination aria-label="Page navigation example" style={{display:"flex",justifyContent:"center",marginTop:"30px"}}>
     <PaginationItem>
         <PaginationLink first href="#" />
       </PaginationItem>
@@ -231,7 +105,7 @@ const Blog = () => {
       <PaginationItem>
         <PaginationLink last href="#" />
       </PaginationItem>
-    </Pagination>
+    </Pagination> */}
     </div>
   );
 };

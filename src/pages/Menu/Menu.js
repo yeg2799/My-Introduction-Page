@@ -21,11 +21,13 @@ import SocialMedia from "../../components/socialMedia";
 const Menu = () => {
   const sliderMenu = () => {
     return (
-      <div>
+      <div className="menu">
+        {/*Profile Image*/}
         <Row>
           <img src={profilePicture} alt="profilresmi"></img>
         </Row>
         <Row className="menu-links">
+          {/*Menu Button*/}
           <Link to="/" className="link">
             <SideBarMenuButton Icon={AiFillHome} title="Anasayfa" />
           </Link>
@@ -46,6 +48,7 @@ const Menu = () => {
             />
           </Link>
         </Row>
+        {/*Social Media*/}
         <Row className="menu-social">
           <SocialMedia
             href="https://www.facebook.com/emre.guzel.3386/"
@@ -68,22 +71,15 @@ const Menu = () => {
       </div>
     );
   };
-  const smallMenu = () => {
-    return (
-      <div className="menu-hamburger">
-        <GiHamburgerMenu className="icon" />
-      </div>
-    );
-  };
+  // const smallMenu = () => {
+  //   return (
+  //     <div className="menu-hamburger">
+  //       <GiHamburgerMenu className="icon" />
+  //     </div>
+  //   );
+  // };
 
-  return (
-    <div className="menu">
-
-  {sliderMenu()}
-  
-  </div>
-  )
-  
+  return <>{sliderMenu()}</>;
 };
 
 export default Menu;

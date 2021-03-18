@@ -1,4 +1,7 @@
 .menu-social {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 160px;
   a {
     padding: 7px;
     &:hover {
@@ -35,6 +38,9 @@
     font-weight: 600;
 }
 @media screen and (min-width: 2560px) {
+  .menu-social{
+    padding-top: 290px;
+  }
   .about-text{
     font-size: 25px;
    
@@ -44,12 +50,18 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .menu-social{
+    padding-top: 60px;
+  }
   .about-img {
     width: 350px;
   }
  
 }
 @media screen and (max-width: 1024px) {
+  .menu-social{
+    padding-top: 60px;
+  }
     .about-img {
       width: 200px;
     }

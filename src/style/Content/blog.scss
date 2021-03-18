@@ -13,6 +13,14 @@
       }
   }
 }
+.menu-social{
+  display: flex;
+  justify-content: space-around;
+  .socialMedia-icon{
+    font-size: 40px;
+    color: #13285e;
+  }
+}
 @media screen and (max-width: 1024px) {
   .blog-row {
     .blog-card{

@@ -1,8 +1,8 @@
 .menu {
   background: linear-gradient(#5f2c82 20%, #49a09d 70%);
-  min-height: 930px;
+  
   color: black;
-
+  width: 25%;
   img {
     width: 250px;
     border-radius: 50%;
@@ -23,7 +23,6 @@
       display: flex;
       flex-direction: row;
       // justify-content: center;
-
       width: 70%;
       margin: 8px auto;
       padding: 13px;
@@ -50,7 +49,7 @@
     width: 55%;
     margin: 0 auto;
     a {
-      .icon {
+      .socialMedia-icon {
         font-size: 40px;
         color: #13285e;
       }
@@ -63,22 +62,22 @@
     }
   }
 }
-.menu-hamburger{
-  display: flex;
-  background-color: #D7DDE8;
-  color: black;
-  padding-left: 20px;
-  .icon{
-    font-size: 50px;
+// .menu-hamburger{
+//   display: flex;
+//   background-color: #D7DDE8;
+//   color: black;
+//   padding-left: 20px;
+//   .icon{
+//     font-size: 50px;
    
-  }
-}
-.sideNav{
-  width: 250px;
-  position: fixed;
-  top: 0px;
-  left: -100px;
-}
+//   }
+// }
+// .sideNav{
+//   width: 250px;
+//   position: fixed;
+//   top: 0px;
+//   left: -100px;
+// }
 
 @media screen and (min-width: 2560px) {
   .menu {
@@ -89,24 +88,23 @@
     }
   
     .menu-links {
+      margin: 100px auto;
       .menu-button {
         width: 70%;
         padding: 15px;
         font-size: 30px;
         padding-left: 140px;
-        &:hover{
-          background: black;
-          color: white;
-        }
       }
     }
     .menu-social {
-      width: 64%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
       a {
-        .icon {
+        .socialMedia-icon {
           font-size: 60px;
         }
-        padding: 10px;
+        padding: 25px;
       }
     }
   }
@@ -115,11 +113,12 @@
 @media screen and (max-width: 1440px) {
   .menu {
     padding-top: 0px;
-    max-height: 795px;
+   
     img {
-      width: 300px; 
+      width: 200px; 
     }
     .menu-links {
+      margin: 50px auto;
       .menu-button {
         width: 80%;
         padding-left: 75px;
@@ -127,12 +126,8 @@
     }
 
     .menu-social {
-      display: flex;
-      width:70%;
+      width:85%;
       a {
-        .icon {
-          font-size: 30px;
-        }
         padding: 10px;
       }
     }
@@ -141,13 +136,14 @@
   
 @media screen and (max-width: 1024px) {
   .menu {
-    padding-left: 20px;
+   
     max-height: 1000px;
     img {
      
       width: 200px;
     }
     .menu-links {
+      margin: 70px auto;
       .menu-button {
         width: 90%;
         padding: 10px;
@@ -156,14 +152,13 @@
     }
   
     .menu-social {
-     
-      width: 91%;
-      a {
-        .icon {
-          font-size: 24px;
+      width:100%;
+      a{
+        .socialMedia-icon{
+          font-size: 30px;
         }
-        padding: 10px;
       }
+      
     }
   }
 }
