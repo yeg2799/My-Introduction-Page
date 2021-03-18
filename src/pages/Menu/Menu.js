@@ -79,7 +79,7 @@ const Menu = () => {
   return (
     <div className="menu">
 
-  {window.screen.width> 767 ? sliderMenu() : smallMenu()}
+  {sliderMenu()}
   
   </div>
   )
