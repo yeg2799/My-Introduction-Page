@@ -1,7 +1,7 @@
 .content{
     background-color: #D7DDE8;
-    
     width: 75%;
+    min-height: 795px;
 }
 @media screen and (min-width: 2560px) {
     .content{
@@ -11,7 +11,6 @@
   @media screen and (max-width: 768px) {
     .content{
       width: 100%;
+      
     }
    }
-  
-  

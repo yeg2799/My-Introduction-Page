@@ -12,3 +12,52 @@
     margin: 0px 9px;
     color: #aaa;
 }
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    .form{
+        width: 70%;
+        margin: 100px auto;
+        
+    }
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .inputName{
+        padding-right: 10px;
+        width: 50%;
+    }
+    .inputSurname{
+       
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact{
+        padding-top: 20px;
+        .form{
+            width: 80%;
+            margin: 20px auto;
+            
+        }
+    }
+    .inputs{
+        
+        flex-direction: column;
+       
+        .inputName{
+            padding-right: 0px;
+            width: 100%;
+        }
+        .inputSurname{
+           
+            width: 100%;
+        }
+    }
+  }
