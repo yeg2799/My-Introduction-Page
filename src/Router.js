@@ -12,7 +12,7 @@ const Contact=lazy(()=> import("./pages/Content/Contact"));
 const App = () => {
   return (
     <Router history={history}>
-      <Suspense fallback={<Spinner color="success"/>}>
+      <Suspense fallback={<Spinner color="success" style={{display:"flex",alignItems:"center",justifyContent:"center"}}/>}>
         <Switch>
           <Route  path="/" component={AppHome} />
           <Route  path="/hakkimda" component={AboutMe} />

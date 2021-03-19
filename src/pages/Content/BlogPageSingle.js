@@ -36,7 +36,7 @@ const BlogPageSingle = (props) => {
     if (item) {
       return (
         <div className="blogPageSingle">
-          <div className="blogText">
+          <div className="blog-card">
             <img
               src={item.blogImage}
               alt="Card image cap"
