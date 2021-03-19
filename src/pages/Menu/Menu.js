@@ -23,10 +23,10 @@ const Menu = () => {
     return (
       <div className="menu">
         {/*Profile Image*/}
-        <Row>
+        <div className="menuProfileImage">
           <img src={profilePicture} alt="profilresmi"></img>
-        </Row>
-        <Row className="menu-links">
+        </div>
+        <div className="menu-links">
           {/*Menu Button*/}
           <Link to="/" className="link">
             <SideBarMenuButton Icon={AiFillHome} title="Anasayfa" />
@@ -47,9 +47,9 @@ const Menu = () => {
               title="İletişim"
             />
           </Link>
-        </Row>
+        </div>
         {/*Social Media*/}
-        <Row className="menu-social">
+        <div className="menu-social">
           <SocialMedia
             href="https://www.facebook.com/emre.guzel.3386/"
             Icon={AiFillFacebook}
@@ -67,7 +67,7 @@ const Menu = () => {
             Icon={AiFillTwitterSquare}
           />
           <SocialMedia href="https://github.com/yeg2799" Icon={AiFillGithub} />
-        </Row>
+        </div>
       </div>
     );
   };

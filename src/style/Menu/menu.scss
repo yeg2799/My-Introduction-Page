@@ -12,12 +12,11 @@
     display: flex;
     flex-direction: column;
     margin: 30px auto;
-    .link{
+    .link {
       display: flex;
       justify-content: center;
       text-decoration: none;
-      color: #13285E;
-      
+      color: #13285e;
     }
     .menu-button {
       display: flex;
@@ -33,11 +32,11 @@
       border-radius: 40px;
       align-items: center;
       cursor: pointer;
-      &:hover{
-        background: #13285E;
+      &:hover {
+        background: #13285e;
         color: #93edc7;
       }
-      .icon{
+      .icon {
         font-size: 32px;
         margin-right: 5px;
       }
@@ -62,22 +61,9 @@
     }
   }
 }
-// .menu-hamburger{
-//   display: flex;
-//   background-color: #D7DDE8;
-//   color: black;
-//   padding-left: 20px;
-//   .icon{
-//     font-size: 50px;
-   
-//   }
-// }
-// .sideNav{
-//   width: 250px;
-//   position: fixed;
-//   top: 0px;
-//   left: -100px;
-// }
+.menuProfileImage {
+  display: flex;
+}
 
 @media screen and (min-width: 2560px) {
   .menu {
@@ -86,7 +72,7 @@
       width: 400px;
       margin-top: 100px;
     }
-  
+
     .menu-links {
       margin: 100px auto;
       .menu-button {
@@ -108,14 +94,13 @@
       }
     }
   }
-
 }
 @media screen and (max-width: 1440px) {
   .menu {
     padding-top: 0px;
-   
+
     img {
-      width: 200px; 
+      width: 200px;
     }
     .menu-links {
       margin: 50px auto;
@@ -126,20 +111,18 @@
     }
 
     .menu-social {
-      width:85%;
+      width: 85%;
       a {
         padding: 10px;
       }
     }
   }
 }
-  
+
 @media screen and (max-width: 1024px) {
   .menu {
-   
     max-height: 1000px;
     img {
-     
       width: 200px;
     }
     .menu-links {
@@ -150,20 +133,64 @@
         padding-left: 35px;
       }
     }
-  
+
     .menu-social {
-      width:100%;
-      a{
-        .socialMedia-icon{
+      width: 100%;
+      a {
+        .socialMedia-icon {
           font-size: 30px;
         }
       }
-      
     }
   }
 }
 @media screen and (max-width: 768px) {
- .menu{
-   width: 100%;
- }
+  .menuProfileImage {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+    .menu-links {
+      margin: 0 auto;
+      .menu-button {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 300px;
+        background: #93edc7;
+        border-radius: 0;
+      }
+    }
+    .menu-social {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu {
+    .menu-links {
+      .menu-button {
+        padding-left: 140px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .menu {
+    .menu-links {
+      .menu-button {
+        padding-left: 120px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu {
+    .menu-links {
+      .menu-button {
+        padding-left: 90px;
+      }
+    }
+  }
 }
