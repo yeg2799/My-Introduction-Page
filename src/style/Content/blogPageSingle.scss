@@ -1,0 +1,14 @@
+.blogPageSingle{
+    display: flex;
+    margin-top: 20px;
+    .blogText{
+        width: 70%;
+        margin-left: 50px;
+        .blogCard-Image{
+            width: 80%;
+            height: 350px;
+            border-radius: 30px;
+        }
+    }
+    
+}

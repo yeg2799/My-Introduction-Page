@@ -1,7 +1,5 @@
 import React from "react";
-import { Row } from "reactstrap";
 import "../../style/Menu/menu.scss";
-import { GiHamburgerMenu } from "react-icons/gi";
 import {
   AiFillHome,
   AiFillProject,
@@ -14,7 +12,7 @@ import {
 import { BsFillPersonFill } from "react-icons/bs";
 import { FaBlogger } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
-import profilePicture from "../../images/profile.jpg";
+import profilePicture from "../../assets/images/profile.jpg";
 import SideBarMenuButton from "./SideBarMenuButton";
 import { Link } from "react-router-dom";
 import SocialMedia from "../../components/socialMedia";

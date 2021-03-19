@@ -6,6 +6,7 @@ import Contact from './Contact'
 import HomePage from './HomePage'
 import MyProject from './MyProject'
 import '../../style/Content/content.scss'
+import BlogPageSingle from './BlogPageSingle'
 const Content = () => {
     return (
         <div class="content" >
@@ -21,6 +22,9 @@ const Content = () => {
                 </Route>
                 <Route exact path="/blog">
                     <Blog/>
+                </Route>
+                <Route exact path="/blog/:id">
+                    <BlogPageSingle/>
                 </Route>
                 <Route exact path="/iletisim">
                     <Contact/>

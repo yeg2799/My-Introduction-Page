@@ -3,9 +3,8 @@ import {
   Card,
   CardImg,
   CardTitle,
-  Row,
 } from "reactstrap";
-import projectImage from '../../images/projectImage.jpg';
+import projectImage from '../../assets/images/projectImage.jpg';
 import '../../style/Content/myProject.scss';
 const MyProject = () => {
   return (

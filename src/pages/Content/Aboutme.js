@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Col, Row } from "reactstrap";
-import profileImage from "../../images/profile.jpg";
+import profileImage from '../../assets/images/profile.jpg';
 import {
   AiFillFacebook,
   AiFillInstagram,
