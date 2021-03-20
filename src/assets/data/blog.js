@@ -2,10 +2,10 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default[
     {
-        blogTitle:"Başlık",
-        blogSubtitle:"subtitle",
+        blogTitle:"Beni Tanır mısın?",
+        blogSubtitle:"Tadınız mı?",
         blogImage:require("../images/profile.jpg").default,
-        blogText:"Herkese Merhaba Arkadaşlar Bugünkü Yazımızda..."
+        blogText:"Merhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterimMerhabalar Herkese Öncelikle Kendimi Tanıtmak İsterim",
     },
     {
         blogTitle:"Başlık",
@@ -14,7 +14,7 @@ export default[
         blogText:"Herkese Merhaba Arkadaşlar Bugünkü Yazımızda..."
     },
     {
-        blogTitle:"Başlık",
+        blogTitle:"Basilıısalcmas",
         blogSubtitle:"subtitle",
         blogImage:require("../images/projectImage.jpg").default,
         blogText:"Herkese Merhaba Arkadaşlar Bugünkü Yazımızda..."

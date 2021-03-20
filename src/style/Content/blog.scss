@@ -1,5 +1,6 @@
 .blog{
   padding-top: 50px;
+  
   .blog-title{
     text-align: center;
   }
@@ -66,6 +67,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: absolute;
       .blog-card{
         flex-direction: column;
         justify-content: center;

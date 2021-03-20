@@ -10,7 +10,7 @@ import {
 import "../../style/Content/aboutme.scss";
 import SocialMedia from "../../components/socialMedia";
 const Aboutme = () => {
-  const [text, setText] = useState(`
+  const [text] = useState(`
   Lorem ipsum dolor sit amet"
   consectetur adipisicing elit. Cumqueid velit neque at hic vero, dicta expedita praesentium officia
   adipisci sequi animi consequuntur dignissimos incidunt iure
@@ -23,7 +23,7 @@ const Aboutme = () => {
   praesentium officia adipisci sequi animi consequuntur
   dignissimos incidunt iure dolore. Debitis, fuga minima? Lorem
 `);
-  const [img, setImg] = useState([
+  const [img] = useState([
     { src: profileImage },
     { src: profileImage },
     { src: profileImage },

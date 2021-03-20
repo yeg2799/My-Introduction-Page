@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Redirect } from "react-router";
 import data from "../../assets/data/blog";
-import { useHistory, useParams } from "react-router-dom";
+import {  Link, useParams } from "react-router-dom";
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -11,16 +11,9 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import "../../style/Content/aboutme.scss";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-} from "reactstrap";
 import SocialMedia from "../../components/socialMedia";
 import "../../style/Content/blogPageSingle.scss";
+
 const BlogPageSingle = (props) => {
   const { id } = useParams();
   useEffect(() => {
@@ -43,8 +36,8 @@ const BlogPageSingle = (props) => {
               className="blogCard-Image"
             ></img>
             <div className="blogText">
-                <p>{item.blogTitle}</p>
-                <p>{item.blogSubtitle}</p>
+                <h1 className="blogText-title">{item.blogTitle}</h1>
+                <h5>{item.blogSubtitle}</h5>
                 <p>{item.blogText}</p>
                 <div className="menu-social">
                 <SocialMedia
@@ -70,9 +63,13 @@ const BlogPageSingle = (props) => {
               </div>
             </div>
 
+           
           </div>
-        <div className="otherText">
-                <a>Diğer 1</a>
+          <div className="otherBlogs">
+            {data.length!==0? data.map((blog,index)=>(
+                  <Link to={`/blog/${index+1}`} className="otherLinks">{blog.blogTitle}</Link>
+            )):""}
+             
         </div>
           
            

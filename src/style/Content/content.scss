@@ -2,15 +2,18 @@
     background-color: #D7DDE8;
     width: 75%;
     min-height: 795px;
+    margin-left: 25%;
+    
 }
 @media screen and (min-width: 2560px) {
     .content{
-        min-height: 1440px;
+        min-height: 1136px;
     }
   }
   @media screen and (max-width: 768px) {
     .content{
+      margin-left: 0px;
+      margin-top: 33%;
       width: 100%;
-      
     }
    }

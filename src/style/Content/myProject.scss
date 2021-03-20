@@ -5,9 +5,11 @@
   }
   .my-project-row {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
+    
    
     .project-link{
       margin-top: 5px;
@@ -21,13 +23,14 @@
       border-radius: 20px;
       font-size: 20px;
       font-weight: 600;
+      
       &:hover{
         background: #13285E;
         color:#93edc7 ;
       }
     }
     .my-project-card {
-      width: 40%;
+      width: 30%;
       border-radius: 20px;
       padding: 20px;
       margin: 10px;
