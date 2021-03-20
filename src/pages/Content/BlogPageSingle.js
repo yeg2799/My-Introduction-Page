@@ -11,8 +11,9 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import "../../style/Content/aboutme.scss";
-import SocialMedia from "../../components/socialMedia";
+
 import "../../style/Content/blogPageSingle.scss";
+import SocialMediaAccounts from "../../components/SocialMedia/SocialMediaAccounts";
 
 const BlogPageSingle = (props) => {
   const { id } = useParams();
@@ -39,41 +40,14 @@ const BlogPageSingle = (props) => {
                 <h1 className="blogText-title">{item.blogTitle}</h1>
                 <h5>{item.blogSubtitle}</h5>
                 <p>{item.blogText}</p>
-                <div className="menu-social">
-                <SocialMedia
-                  href="https://www.facebook.com/emre.guzel.3386/"
-                  Icon={AiFillFacebook}
-                />
-                <SocialMedia
-                  href="https://www.instagram.com/_emrguzel_/"
-                  Icon={AiFillInstagram}
-                />
-                <SocialMedia
-                  href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/"
-                  Icon={AiFillLinkedin}
-                />
-                <SocialMedia
-                  href="https://twitter.com/emrex99"
-                  Icon={AiFillTwitterSquare}
-                />
-                <SocialMedia
-                  href="https://github.com/yeg2799"
-                  Icon={AiFillGithub}
-                />
-              </div>
+                <SocialMediaAccounts/>
             </div>
-
-           
           </div>
           <div className="otherBlogs">
             {data.length!==0? data.map((blog,index)=>(
                   <Link to={`/blog/${index+1}`} className="otherLinks">{blog.blogTitle}</Link>
             )):""}
-             
         </div>
-          
-           
-            
         </div>
       );
     } else {

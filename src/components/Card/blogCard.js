@@ -7,17 +7,10 @@ import {
   CardTitle,
   CardSubtitle,
 } from "reactstrap";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterSquare,
-  AiFillGithub,
-} from "react-icons/ai";
 import "../../style/Content/blog.scss";
-import SocialMedia from "../../components/socialMedia";
 import blogText from "../../assets/data/blog";
 import { Link } from "react-router-dom";
+import SocialMediaAccounts from "../SocialMedia/SocialMediaAccounts";
 const blogCard = () => {
   return (
     <React.Fragment>
@@ -38,28 +31,7 @@ const blogCard = () => {
             <CardText>{blog.blogText.slice(0, 200)}</CardText>
 
             {/*Social Media */}
-            <div className="menu-social">
-              <SocialMedia
-                href="https://www.facebook.com/emre.guzel.3386/"
-                Icon={AiFillFacebook}
-              />
-              <SocialMedia
-                href="https://www.instagram.com/_emrguzel_/"
-                Icon={AiFillInstagram}
-              />
-              <SocialMedia
-                href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/"
-                Icon={AiFillLinkedin}
-              />
-              <SocialMedia
-                href="https://twitter.com/emrex99"
-                Icon={AiFillTwitterSquare}
-              />
-              <SocialMedia
-                href="https://github.com/yeg2799"
-                Icon={AiFillGithub}
-              />
-            </div>
+            <SocialMediaAccounts/>
           </CardBody>
         </Card>
       ))}

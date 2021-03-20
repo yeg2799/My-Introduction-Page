@@ -3,11 +3,6 @@ import "../../style/Menu/menu.scss";
 import {
   AiFillHome,
   AiFillProject,
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterSquare,
-  AiFillGithub,
 } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { FaBlogger } from "react-icons/fa";
@@ -15,7 +10,7 @@ import { MdContactMail } from "react-icons/md";
 import profilePicture from "../../assets/images/profile.jpg";
 import SideBarMenuButton from "./SideBarMenuButton";
 import { Link } from "react-router-dom";
-import SocialMedia from "../../components/socialMedia";
+import SocialMediaAccounts from "../../components/SocialMedia/SocialMediaAccounts";
 const Menu = () => {
   const sliderMenu = () => {
     return (
@@ -47,25 +42,8 @@ const Menu = () => {
           </Link>
         </div>
         {/*Social Media*/}
-        <div className="menu-social">
-          <SocialMedia
-            href="https://www.facebook.com/emre.guzel.3386/"
-            Icon={AiFillFacebook}
-          />
-          <SocialMedia
-            href="https://www.instagram.com/_emrguzel_/"
-            Icon={AiFillInstagram}
-          />
-          <SocialMedia
-            href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/"
-            Icon={AiFillLinkedin}
-          />
-          <SocialMedia
-            href="https://twitter.com/emrex99"
-            Icon={AiFillTwitterSquare}
-          />
-          <SocialMedia href="https://github.com/yeg2799" Icon={AiFillGithub} />
-        </div>
+        <SocialMediaAccounts/>
+       
       </div>
     );
   };

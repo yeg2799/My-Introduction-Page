@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import profileImage from '../../assets/images/profile.jpg';
 import {
-  AiFillFacebook,
   AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterSquare,
-  AiFillGithub,
 } from "react-icons/ai";
 import "../../style/Content/aboutme.scss";
-import SocialMedia from "../../components/socialMedia";
+import SocialMediaAccounts from "../../components/SocialMedia/SocialMediaAccounts";
 const Aboutme = () => {
   const [text] = useState(`
   Lorem ipsum dolor sit amet"
@@ -41,30 +37,7 @@ const Aboutme = () => {
                 {text}
               </span>
 
-              <div
-                className="menu-social"
-              >
-                <SocialMedia
-                  href="https://www.facebook.com/emre.guzel.3386/"
-                  Icon={AiFillFacebook}
-                />
-                <SocialMedia
-                  href="https://www.instagram.com/_emrguzel_/"
-                  Icon={AiFillInstagram}
-                />
-                <SocialMedia
-                  href="https://www.linkedin.com/in/emre-g%C3%BCzel-6bb4101a2/"
-                  Icon={AiFillLinkedin}
-                />
-                <SocialMedia
-                  href="https://twitter.com/emrex99"
-                  Icon={AiFillTwitterSquare}
-                />
-                <SocialMedia
-                  href="https://github.com/yeg2799"
-                  Icon={AiFillGithub}
-                />
-              </div>
+         <SocialMediaAccounts/>
             </div>
           </div>
       </div>
